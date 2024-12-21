@@ -1,4 +1,3 @@
-import micromatch from 'micromatch';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
@@ -9,12 +8,6 @@ const nextConfig = {
 			},
 		],
 	},
-	async rewrites() {
-		// Ensure patterns are valid and not overly complex
-		return [
-		  { source: '/valid-route', destination: '/api/valid' },
-		];
-	  },
 };
 
 export default nextConfig;
